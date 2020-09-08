@@ -1,0 +1,38 @@
+@font-face {
+  font-family: Bold-Lato;
+  src: url("./assets/fonts/Lato/Lato-Bold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: BoldItalic-Lato;
+  src: url("./assets/fonts/Lato/Lato-BoldItalic.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: Light-Lato;
+  src: url("./assets/fonts/Lato/Lato-Light.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: Regualr-Lato;
+  src: url("./assets/fonts/Lato/Lato-Regular.ttf") format("opentype");
+}
+
+.app {
+  background-image: url("./assets/images/background.png");
+  height: 100vh;
+  font-family: Regualr-Lato;
+}
+.app-header {
+}
+
+.absolute-content {
+  left: calc(50% - (110px + 332px) / 2);
+  top: 64px;
+}
+
+.moto-family {
+  font-family: BoldItalic-Lato;
+  color: #cb1618;
+  font-size: 200px;
+}

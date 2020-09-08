@@ -1,6 +1,9 @@
 import React from 'react';
 import './App.css';
 import worldWide from './assets/images/world-wide.png';
+import Slider from './components/Slider/Slider';
+import motocyclesData from './data/Data';
+
 
 function App() {
   return (
@@ -19,7 +22,7 @@ function App() {
 
       </header>
       <main>
-
+        <Slider slidersData={motocyclesData}></Slider>
       </main>
       <footer>
 

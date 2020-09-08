@@ -19,8 +19,8 @@
 }
 
 .app {
-  background-image: url("./assets/images/background.png");
-  height: 100vh;
+  /* background-image: url("./assets/images/background.png"); */
+  /* height: 100vh; */
   font-family: Regualr-Lato;
 }
 .app-header {

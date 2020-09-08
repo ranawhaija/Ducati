@@ -1,0 +1,36 @@
+.slider-component-container {
+    padding: 44px;
+    position: absolute;
+    width: 100%;
+}
+.moto-id {
+    font-size: 200px;
+    font-family: Bold-Lato;
+    line-height: 1.15;
+}
+.slider-data {
+    width: 100%;
+}
+.slider-data:not(:first-child) {
+    opacity: 0;
+}
+
+.data-box {
+    width: 100%;
+    padding: 20px 40px;
+    margin-top: 250px;
+}
+
+.info {
+    color: #181818;
+}
+
+.info > label {
+    font-family: Light-Lato;
+    font-size: 12px;
+}
+
+.info > span {
+    font-family: Bold-Lato;
+    font-size: 24px;
+}

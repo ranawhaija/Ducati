@@ -2,6 +2,7 @@
     padding: 44px;
     position: absolute;
     width: 100%;
+    z-index: -1;
 }
 .moto-id {
     font-size: 55px;

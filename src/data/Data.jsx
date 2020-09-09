@@ -24,7 +24,7 @@ const motocyclesData = [
         "name": "Ducatti 821",
         "type": "Sport",
         "image": blackMoto,
-        "color": "#00000",
+        "color": "#000000",
         "specs": {
             "displacement": "821 cc",
             "horse Power": "109 hp (80 kW)",

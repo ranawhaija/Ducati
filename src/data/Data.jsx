@@ -1,7 +1,7 @@
 
-import redMoto from '../assets/images/red-moto.png';
-import blackMoto from '../assets/images/black-moto.png';
-import silverMoto from '../assets/images/silver-moto.png';
+import redMoto from '../assets/images/red-moto.webp';
+import blackMoto from '../assets/images/black-moto.webp';
+import silverMoto from '../assets/images/silver-moto.webp';
 
 const motocyclesData = [
     {

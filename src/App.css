@@ -1,21 +1,33 @@
 @font-face {
   font-family: Bold-Lato;
-  src: url("./assets/fonts/Lato/Lato-Bold.ttf") format("opentype");
+  src: url("./assets/fonts/Lato/Lato-Bold.woff2") format("woff2");
+  font-display: swap;
+ 
+ 
 }
 
 @font-face {
   font-family: BoldItalic-Lato;
-  src: url("./assets/fonts/Lato/Lato-BoldItalic.ttf") format("opentype");
+  src: url("./assets/fonts/Lato/Lato-BoldItalic.woff2") format("woff2");
+  font-display: swap;
+ 
+
 }
 
 @font-face {
   font-family: Light-Lato;
-  src: url("./assets/fonts/Lato/Lato-Light.ttf") format("opentype");
+  src: url("./assets/fonts/Lato/Lato-Light.woff2") format("woff2");
+  font-display: swap;
+ 
+
 }
 
 @font-face {
   font-family: Regualr-Lato;
-  src: url("./assets/fonts/Lato/Lato-Regular.ttf") format("opentype");
+  src: url("./assets/fonts/Lato/Lato-Regular.woff2") format("woff2");
+  font-display: swap;
+ 
+
 }
 
  @-webkit-keyframes swing-right-fwd {

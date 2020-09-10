@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './Slider.css';
-import ducatiLogo from '../../assets/images/ducati-logo.png';
-import monester from '../../assets/images/Monster.png';
+import ducatiLogo from '../../assets/images/ducati-logo.webp';
+import monester from '../../assets/images/Monster.webp';
 const pageIndicators = []; 
 let selectedItem = 0;
 
 export default class Slider extends Component {
   static propTypes = {
-    slidersData: PropTypes.object.isRequired
+    slidersData: PropTypes.array.isRequired
   }
 
   static defaultProps = {
@@ -61,7 +61,7 @@ this.state = {
          className={`slider-data absolute flex flex-col items-center ${this.state.selectedItem === i ? 'selected' : ''}`}>
            {/* opacity: this.state.selectedItem === i ? 1 : 0, */}
           <span className="moto-id text-white">{data.id}</span>
-          <img  className="absolute" src={data.image} />
+          <img alt="moto image"  className="absolute" src={data.image} />
           <div className="data-box bg-white rounded flex flex-col">
             {this.renderSpecs(data.specs)}
           </div>
@@ -76,8 +76,8 @@ this.state = {
     return (
       <div className="slider-component-container absolute top-0 flex flex-col justify-center">
         <div className="fixed-part flex flex-col items-center">
-          <img   className="ducati-logo mx-1 my-4  lg:mx-2 lg:my-0 lg:w-25" src={ducatiLogo} />
-          <img width="322" className="ducati-family mx-1 my-6 lg:mx-2 lg:mt-12" src={monester} />
+          <img alt="logo"  className="ducati-logo mx-1 my-4  lg:mx-2 lg:my-0 lg:w-25" src={ducatiLogo} />
+          <img alt="moto family" width="322" className="ducati-family mx-1 my-6 lg:mx-2 lg:mt-12" src={monester} />
         </div>
         <div className="slider-data-container relative">
           {this.renderSliders(this.props.slidersData)}

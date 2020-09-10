@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import './App.css';
-import worldWide from './assets/images/world-wide.png';
 import Slider from './components/Slider/Slider';
 import motocyclesData from './data/Data';
+import './App.css';
+import worldWide from './assets/images/world-wide.png';
 
 export default class App extends Component {
 
@@ -10,13 +10,21 @@ export default class App extends Component {
     super();
 
 this.state = {
-  isMenuHidden: true,
+  isMenuHidden: null,
     };
   }
 
   toggle = ()=> {
     const currentState = this.state.isMenuHidden;
+    if(currentState === null) {
+      this.setState({ isMenuHidden: false });
+      return;
+    }
     this.setState({ isMenuHidden: !currentState }); 
+}
+
+getClassName = ()=> {
+  return this.state.isMenuHidden===null?'' : (this.state.isMenuHidden ? 'hide' : 'show')
 }
 
     render() {
@@ -36,7 +44,7 @@ this.state = {
           </header>
           <main>
               <div className={`side-menu-container
-               text-white fixed z-10 ${this.state.isMenuHidden ? 'hide' : 'show'}`}>
+               text-white fixed z-10 ${this.getClassName()}`}>
                  <span className="text-red-600 absolute top-0 py-6 font-black text-3xl" >DUCATI</span>
                  <div onClick={this.toggle} className="close px-5 flex justify-end hover:text-red-600">X</div>
                  <label className="text-gray-600">Discover More</label>
@@ -51,6 +59,7 @@ this.state = {
           <footer>
     
           </footer>
+          <div className={`overlay ${this.getClassName()}`}></div>
         </div>
       );
     }

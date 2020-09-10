@@ -5,6 +5,16 @@
 - The project is uploaded to `netlify`, use this url to access the website:
 https://ducati.netlify.app/
 - Website is tested using `lighthouse` dev tool, check the following image:
+
+```{r, echo=FALSE}
+# Define variable containing url
+url <- "https://drive.google.com/file/d/1Y_on-rmt9uDWdCpZcDtCW-LHnOOESL9V/view?usp=sharing"
+```
+## Some cat!
+<center><img src="`r url`"></center>
+
+## Alternatively...
+![](`r url`)
  
 https://drive.google.com/file/d/1Y_on-rmt9uDWdCpZcDtCW-LHnOOESL9V/view?usp=sharing
 

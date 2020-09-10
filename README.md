@@ -6,7 +6,7 @@
 https://ducati.netlify.app/
 - Website is tested using `lighthouse` dev tool, check the following image:
  
-Screen Shot 2020-09-10 at 4.48.54 PM
+https://drive.google.com/file/d/1Y_on-rmt9uDWdCpZcDtCW-LHnOOESL9V/view?usp=sharing
 
 
 
